@@ -3,6 +3,8 @@ import home from './pages/home.vue';
 import login from './pages/login.vue';
 import register from './pages/register.vue';
 import dashboard from "@/pages/dashboard.vue";
+import basicHooks from './pages/basic/hooks.vue'
+import methods from './pages/basic/methods.vue'
 
 const routes = [
     {
@@ -33,8 +35,16 @@ const routes = [
         meta:{
             requreAuth:false,
         }
+    },
+    {
+        path:'/hooks',
+        component: basicHooks,
+    },
+    //more basic
+    {
+     path: '/methods',
+     component:methods,
     }
-
 
 ]
 
